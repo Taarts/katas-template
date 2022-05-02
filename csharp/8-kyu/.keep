@@ -1,0 +1,28 @@
+using System;
+
+namespace Solution
+{
+    interface SolutionClass{static string EvenOrOdd(int n)=>(n&1)>0?"Odd":"Even";
+    }
+    // Solution provided by JackFilov//
+
+    // my solution//
+    using System;
+
+namespace Solution
+{
+  public class SolutionClass
+  {
+    public static string EvenOrOdd(int number)
+    {
+      if(number % 2 == 0)
+        {
+        return "Even";
+         }
+        {
+          return "Odd";
+        }
+    }
+  }
+}
+
