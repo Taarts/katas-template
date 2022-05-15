@@ -1,0 +1,13 @@
+using System.Collections.Generic;
+public class LineNumbering 
+{
+    public static List<string> Number(List<string> lines) 
+    {
+        var newString = new List<string>();
+      for (var i = 1; i < lines.Count + 1; i++ )
+        {
+        newString.Add (i + ": " + lines[i - 1]);
+      }
+        return newString;
+    }
+}
