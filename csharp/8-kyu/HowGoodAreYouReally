@@ -1,0 +1,30 @@
+public class Kata
+{
+  public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
+  {
+    // code
+    var sum = 0;
+    foreach (var ClassPoint in ClassPoints){
+      sum = sum + ClassPoint;
+   }
+    var ClassPointAvg = sum / ClassPoints.Length;
+    return YourPoints > ClassPointAvg;
+    }
+}
+/*
+P
+work out the average of the test 
+sum of all the scores / number of scores
+compare your score to the average
+E
+list of scores
+my score
+D
+  array of student scores
+  your score
+  if bool > average = true
+  else = false
+A
+var classPoints
+create var average = sum.scores / count.scores
+create if your score > average = true */
